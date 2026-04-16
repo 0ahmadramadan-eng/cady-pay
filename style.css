@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+
+    background: linear-gradient(135deg, #5A2A8A, #7A3FA0, #C43C8C);
+    color: white;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+.card {
+    background: white;
+    color: black;
+    padding: 18px;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+/* اسم البنك */
+.bank-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5A2A8A;
+}
+
+/* كل صف */
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+}
+
+/* زر النسخ */
+.card button {
+    width: 100%;
+    background: linear-gradient(135deg, #5A2A8A, #7A3FA0, #C43C8C) !important;
+    color: white !important;
+
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.card button:active {
+    transform: scale(0.98);
+}
+.header {
+    width: 90%;
+    max-width: 420px;
+    margin: 10px auto 5px auto;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 5px 0 0 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    margin: 0;
+    opacity: 0.9;
+}
+.logo {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin: 2px 0 0 0;
+}
+
+
+.note-badge {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+
+     background: linear-gradient(135deg, #5A2A8A, #7A3FA0, #C43C8C) !important;
+}
+body {
+    padding-bottom: 40px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .bank-name {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .note-badge {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+.card {
+    margin-top: 10px;
+}
+.card:first-of-type {
+    margin-top: 8px;
+}
+.header {
+    width: 90%;
+    max-width: 420px;
+    margin: 10px auto 5px auto;
+}
+
+.card {
+    width: 90%;
+    max-width: 420px;
+    margin: 12px auto;
+}

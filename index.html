@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cady Pay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="header">
+    <img src="logo.png" class="logo">
+    <h1>Cady Pay</h1>
+    <p>بوابة الدفع المصرفية</p>
+</div>
+   
+<div class="card">
+
+    <div class="bank-name">مصرف الأندلس</div>
+
+    <!-- رقم الحساب -->
+    <div class="row">
+        <p>رقم الحساب</p>
+        <p id="acc1">202902559101017</p>
+        <button onclick="copy('acc1')">نسخ رقم الحساب</button>
+    </div>
+
+    <!-- IBAN -->
+    <div class="row">
+        <p>IBAN</p>
+        <p id="iban1">LY93027101202902559101017</p>
+        <button onclick="copy('iban1')">نسخ IBAN</button>
+        <div class="note-badge">
+    الحساب باسم: زهرة كادي لبيع للحلويات
+</div>
+    </div>
+
+</div>
+<div class="card">
+
+    <div class="bank-name">مصرف الأندلس</div>
+
+    <div class="row">
+        <p>رقم الحساب</p>
+        <p id="acc2">202905352001014</p>
+        <button onclick="copy('acc2')">نسخ رقم الحساب</button>
+    </div>
+
+    <div class="row">
+        <p>IBAN</p>
+        <p id="iban2">LY05027202202905352001014</p>
+        <button onclick="copy('iban2')">نسخ IBAN</button>
+        <div class="note-badge">
+    الحساب باسم: شركة زهرة كادي للصناعات المواد الغذائية
+</div>
+    </div>
+
+</div>
+<div class="card">
+
+    <div class="bank-name">مصرف اليقين</div>
+
+    <div class="row">
+        <p>رقم الحساب</p>
+        <p id="acc3">203000053130016</p>
+        <button onclick="copy('acc3')">نسخ رقم الحساب</button>
+    </div>
+
+    <div class="row">
+        <p>IBAN</p>
+        <p id="iban3">LY56026203203000053130016</p>
+        <button onclick="copy('iban3')">نسخ IBAN</button>
+                <div class="note-badge">
+    الحساب باسم: شركة زهرة كادي للصناعات المواد الغذائية
+</div>
+    </div>
+
+</div>
+<div class="card">
+
+    <div class="bank-name">المصرف الإسلامي</div>
+
+    <div class="row">
+        <p>رقم الحساب</p>
+        <p id="acc4">115667343410018</p>
+        <button onclick="copy('acc4')">نسخ رقم الحساب</button>
+
+    </div>
+
+    <div class="row">
+        <p>IBAN</p>
+        <p id="iban4">LY92025010115667343410018</p>
+        <button onclick="copy('iban4')">نسخ IBAN</button>
+                <div class="note-badge">
+    الحساب باسم: شركة زهرة كادي للصناعات المواد الغذائية
+</div>
+    </div>
+
+</div>
+<div class="card">
+
+    <div class="bank-name">مصرف النوران</div>
+
+    <div class="row">
+        <p>رقم الحساب</p>
+        <p id="acc5">100232210200197</p>
+        <button onclick="copy('acc5')">نسخ رقم الحساب</button>
+    </div>
+
+    <div class="row">
+        <p>IBAN</p>
+        <p id="iban5">LY58024005010023221020501</p>
+        <button onclick="copy('iban5')">نسخ IBAN</button>
+                <div class="note-badge">
+    الحساب باسم: شركة زهرة كادي للصناعات المواد الغذائية
+</div>
+    </div>
+
+</div>
+<div class="card">
+
+    <div class="bank-name">مصرف الجمهورية - فرع الدعوة الإسلامية (طرابلس)</div>
+
+    <div class="row">
+        <p>رقم الحساب</p>
+        <p id="acc6">112207000003204</p>
+        <button onclick="copy('acc6')">نسخ رقم الحساب</button>
+    </div>
+
+    <div class="row">
+        <p>IBAN</p>
+        <p id="iban6">LY92002112112207000003204</p>
+        <button onclick="copy('iban6')">نسخ IBAN</button>
+                <div class="note-badge">
+    الحساب باسم: شركة زهرة كادي للصناعات المواد الغذائية
+</div>
+    </div>
+
+</div>
+<div class="card">
+
+    <div class="bank-name">مصرف الأندلس</div>
+
+    <div class="row">
+        <p>رقم الحساب</p>
+        <p id="acc7">202102552101016</p>
+        <button onclick="copy('acc7')">نسخ رقم الحساب</button>
+    </div>
+
+    <div class="row">
+        <p>IBAN</p>
+        <p id="iban7">LY880271012022022552102010</p>
+        <button onclick="copy('iban7')">نسخ IBAN</button>
+                <div class="note-badge">
+ الحساب باسم: بلعيد محمد حويل
+</div>
+    </div>
+
+</div>
+<script>
+function copy(id){
+    let text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text);
+    alert("تم النسخ ✔");
+}
+</script>
+</body>
+</html>
