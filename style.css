@@ -226,3 +226,20 @@ body {
     80% {opacity: 1;}
     100% {opacity: 0; transform: translateX(-50%) translateY(20px);}
 }
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background: #5A2A8A;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    z-index: 999;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
