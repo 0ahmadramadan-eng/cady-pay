@@ -172,3 +172,27 @@ body {
     max-width: 420px;
     margin: 12px auto;
 }
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background: #5A2A8A;
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    z-index: 999;
+
+    animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+    0% {opacity: 0; transform: translateX(-50%) translateY(20px);}
+    20% {opacity: 1; transform: translateX(-50%) translateY(0);}
+    80% {opacity: 1;}
+    100% {opacity: 0; transform: translateX(-50%) translateY(20px);}
+}
