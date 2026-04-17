@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <audio id="copySound" preload="auto">
+  <source src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3" type="audio/mpeg">
+</audio>
 <div class="header">
     <img src="logo.png" class="logo">
     <h1>Cady Pay</h1>
@@ -154,13 +157,13 @@ function copy(id, btn) {
 
     navigator.clipboard.writeText(text).then(() => {
 
-        // صوت (اختياري)
         let sound = document.getElementById("copySound");
         if (sound) {
+            sound.currentTime = 0;
+            sound.volume = 0.4;
             sound.play().catch(() => {});
         }
 
-        // تغيير الزر
         btn.innerText = "تم النسخ ✅";
         btn.style.background = "#28a745";
 
