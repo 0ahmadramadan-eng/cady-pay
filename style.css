@@ -243,3 +243,37 @@ body {
 
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+/* ===== Card Animation FIX ===== */
+
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease forwards !important;
+}
+
+/* الحركة */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تأخير ظهور البطاقات */
+.card:nth-of-type(1) { animation-delay: 0.1s; }
+.card:nth-of-type(2) { animation-delay: 0.2s; }
+.card:nth-of-type(3) { animation-delay: 0.3s; }
+.card:nth-of-type(4) { animation-delay: 0.4s; }
+.card:nth-of-type(5) { animation-delay: 0.5s; }
+.card:nth-of-type(6) { animation-delay: 0.6s; }
+.card:nth-of-type(7) { animation-delay: 0.7s; }
+
+/* حركة عند المرور */
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
