@@ -149,7 +149,36 @@
 function copy(id){
     let text = document.getElementById(id).innerText;
     navigator.clipboard.writeText(text);
-    alert("تم النسخ ✔");
+<script>
+function copy(id, btn) {
+    var text = document.getElementById(id).innerText;
+
+    navigator.clipboard.writeText(text);
+
+    // تغيير نص الزر مؤقتاً
+    btn.innerText = "تم النسخ ✅";
+    btn.style.background = "#28a745";
+
+    // إظهار رسالة عائمة
+    showToast("تم النسخ بنجاح");
+
+    setTimeout(() => {
+        btn.innerText = "نسخ";
+        btn.style.background = "";
+    }, 2000);
+}
+
+// Toast Message
+function showToast(message) {
+    let toast = document.createElement("div");
+    toast.innerText = message;
+    toast.className = "toast";
+
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 2000);
 }
 </script>
 </body>
